@@ -3,11 +3,11 @@
 This repository contains the code for the paper 'Joint Metric Space Embedding of Heterogeneous Data with Optimal Transport'. 
 A preprint version is available on [Arxiv](https://arxiv.org/pdf/2502.07510).
 
-The notebook 'Euclidean Example' gives a first intuition for an Euclidean embedding. The 'Spherical Examples' shows the use of the Wrapper_REW function and an embedding on a non-Euclidean space. We refer to the directories for visualizations.
+The notebook 'Euclidean Example' gives a first intuition for an Euclidean embedding. The 'Spherical Examples' shows the use of the Wrapper_REW function and an embedding on a non-Euclidean space. We refer to the directories for visualizations. 
 
-Finally, the notebook on latent space alignment provides a small example of domain adaptation.
+Finally, the notebook on latent space alignment provides a small example of domain adaptation. Here, we also use the barycentric projection to get a 'free-support' visualization. 
 
-Additional details can be found in our paper.
+The REW_utils.py contains all the main functions. Additional details can be found in our paper.
 
 ## Requirements
 The simulations have been performed with Python 3.12.2. See the requirements.txt for our libraries. For the experiments in our paper, we additionally used these well-kept repositories:
