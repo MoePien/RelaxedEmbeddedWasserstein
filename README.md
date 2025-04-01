@@ -10,7 +10,7 @@ The REW_utils.py contains all the main functions, particularly the 'REW' and the
 - the Sinkhorn parameter $\varepsilon$: Smaller values lead to better results but can cause numerical overflow,
 - the embedding space $(Z, d_Z)$ defined by 'Z_name' (Geometry), 'n' (Grid Resolution) and 'max_len' (maximum distance $d_Z$): Choose 'Plane' (Euclidean Square), 'Sphere', 'Torus'
   
-Additional details can be found in our paper.
+As is common with Gromov-Wasserstein can sometimes get stuck in local minima. To avoid this, it is recommended to vary these parameters. Additional details can be found in our paper.
 
 ## Requirements
 The simulations have been performed with Python 3.12.2. Please take a look at the requirements.txt for our libraries. For the experiments in our paper, we additionally used these well-kept repositories:
