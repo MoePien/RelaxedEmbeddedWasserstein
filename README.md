@@ -13,7 +13,9 @@ The REW_utils.py contains all the main functions, particularly the 'REW' and the
   - 'n' (grid resolution): Grid size is $n^2$. Heavily impacts the runtime
   - 'max_len' (maximum distance of $d_Z$): If input distances are normalized, this value should be between 1 and 1.5.
   
-As is common with Gromov-Wasserstein, our method can sometimes get stuck in local minima. To avoid this, it is recommended to vary these parameters. Inputs should be provided using the 'GM' class, see example notebooks. Additional details can be found in our paper.
+As is common with Gromov-Wasserstein, our method can sometimes get stuck in local minima. To avoid this, it is recommended to vary these parameters. Inputs should be provided using the 'GM' class, see example notebooks. The GM class defines a metric (or gauge) measure space and supports
+Euclidean data (mode="Euclidean"), graph data (mode="graph"), 3d meshes (mode="surface"), and direct input of the input distance matrix "g" (mode="gauge_only"). 
+Data point weights are defined via "xi" and distance matrices are normalized via "normalize_gauge" (Boolean). Background information can be found in our paper.
 
 ## Requirements
 The simulations have been performed with Python 3.12.2. Please take a look at the requirements.txt for our libraries. For the experiments in our paper, we additionally used these well-kept repositories:
