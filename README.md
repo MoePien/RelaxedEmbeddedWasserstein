@@ -11,9 +11,9 @@ The REW_utils.py contains all the main functions, particularly the 'REW' and the
 - the embedding space $(Z, d_Z)$:
   - 'Z_name' (geometry): Choose 'Plane' (Euclidean Square), 'Sphere', 'Torus' for 'Z_name'
   - 'n' (grid resolution): Grid size is $n^2$. Heavily impacts the runtime
-  - 'max_len' (maximum distance of $d_Z$): If input distance are normalized, this value should be between 1 and 1.5.
+  - 'max_len' (maximum distance of $d_Z$): If input distances are normalized, this value should be between 1 and 1.5.
   
-As is common with Gromov-Wasserstein can sometimes get stuck in local minima. To avoid this, it is recommended to vary these parameters. Inputs should be provided using the 'GM' class, see example notebooks. Additional details can be found in our paper.
+As is common with Gromov-Wasserstein, our method can sometimes get stuck in local minima. To avoid this, it is recommended to vary these parameters. Inputs should be provided using the 'GM' class, see example notebooks. Additional details can be found in our paper.
 
 ## Requirements
 The simulations have been performed with Python 3.12.2. Please take a look at the requirements.txt for our libraries. For the experiments in our paper, we additionally used these well-kept repositories:
