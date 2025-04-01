@@ -18,7 +18,7 @@ As is common with Gromov-Wasserstein, our method can sometimes get stuck in loca
 ## Requirements
 The simulations have been performed with Python 3.12.2. Please take a look at the requirements.txt for our libraries. For the experiments in our paper, we additionally used these well-kept repositories:
 
-* [JointMDS](https://github.com/borgwardtlab/jointmds>)
+* [JointMDS](https://github.com/borgwardtlab/jointmds)
 * [UnionCom](https://github.com/caokai1073/UnionCom)
 * [SCOT](https://github.com/rsinghlab/SCOT)
 
